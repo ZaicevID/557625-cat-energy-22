@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -35,28 +36,28 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="program-selection">
-        <div class="program-selection__wrapper">
-          <h1 class="program-selection__title">
+      <section class="application">
+        <div class="application__wrapper">
+          <h1 class="application__title">
             Подбор программы
           </h1>
-          <p class="program-selection__description">
+          <p class="application__description">
             Заполните анкету и вы подберем программу питания для вашего кота
           </p>
-          <form class="program-selection__form">
-            <lable for="name">
+          <form class="application__form">
+            <label for="name">
               Имя:*
-            </lable>
+            </label>
             <input type="text" id="name" required placeholder="Барсик">
-            <lable for="weight">
+            <label for="weight">
               Вес (кг):*
-            </lable>
+            </label>
             <input type="number" id="weight" required placeholder="7">
-            <lable for="age">
+            <label for="age">
               Возраст (лет):
-            </lable>
+            </label>
             <input type="number" id="age" required placeholder="7">
-            <ul class="program-selection__form--radio">
+            <ul class="application__form--radio">
               <li class="radio-option">
                 <input class="radio-option__input" type="radio" name="grid" id="lose-weight" checked="">
                 <label for="lose-weight" class="radio-option__name">Похудение</label>
@@ -70,24 +71,24 @@
                 <label for="recommendations" class="radio-option__name">Не знаю (нужны ваши советы)</label>
               </li>
             </ul>
-            <fieldset class="program-selection__form--contacts">
+            <fieldset class="application__form--contacts">
               <legend class="contacts-name">Контактные данные (владельца кота)</legend>
-              <lable for="email">
+              <label for="email">
                 E-Mail:*
-              </lable>
+              </label>
               <input type="email" id="email" required placeholder="kuklachev@gmail.com">
-              <lable for="phone">
+              <label for="phone">
                 Телефон:*
-              </lable>
+              </label>
               <input type="number" id="phone" required placeholder="8 (960) 900-60-90">
             </fieldset>
-            <fieldset class="program-selection__form--comment">
+            <fieldset class="application__form--comment">
               <legend class="comment-name">Комментарий</legend>
               <textarea name="comment" id="text" cols="40" rows="3" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="program-selection__form--additional">
+            <fieldset class="application__form--additional">
               <legend class="additional-name">Дополнительно</legend>
-              <ul class="program-selection__form--checkbox">
+              <ul class="application__form--checkbox">
                 <li class="checkbox-option">
                   <input class="checkbox-option__input" type="checkbox" name="grid" id="sweetener" checked="">
                   <label for="sweetener" class="checkbox-option__name">Сахарозаменитель</label>
