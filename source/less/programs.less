@@ -1,5 +1,21 @@
 .programs__item {
   background: #F2F2F2;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+  }
+  @media (min-width: @desktop-width) {
+    max-width: 570px;
+  }
+}
+
+.programs__list {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 .programs__title {

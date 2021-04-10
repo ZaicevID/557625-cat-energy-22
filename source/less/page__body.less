@@ -1,12 +1,29 @@
 .page__body {
-  font-family: "Oswald", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
   min-height: 100%;
   min-width: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+}
+
+@font-face {
+  font-family: "Oswald", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  src:
+    url("fonts/oswaldregular.woff2") format("woff2"),
+    url("fonts/oswaldmedium.woff") format("woff");
+}
+
+.page-main {
+  max-width: 320px;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+  }
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+  }
 }

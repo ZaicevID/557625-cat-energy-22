@@ -1,4 +1,23 @@
-.site-list__item a {
+
+
+.main-nav {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+}
+
+.main-nav__list a {
   font-family: Oswald;
   font-style: normal;
   font-weight: 500;
@@ -6,4 +25,9 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  @media (min-width: @tablet-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
