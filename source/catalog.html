@@ -3,43 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo/logo-mobile.png" width="33" height="38" alt="Cat Energy logo">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="page-header__logo-wrapper">
+        <a>
+          <picture class="page-header__logo">
+            <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img src="img/logo/logo-mobile.svg" width="191" height="37" alt="Cat Energy logo">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-nav  main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
-      <section class="catalog">
+      <h1 class="page-main__catalog-title">
+        Каталог продукции
+      </h1>
+      <section class="page-main__products-wrapper catalog">
         <div class="catalog__wrapper">
-          <h1 class="catalog__title">
-            Каталог продукции
-          </h1>
           <div class="listing">
             <ul class="listing__list">
               <li class="listing__list__item">
@@ -64,13 +67,13 @@
                           <td>Курица</td>
                         </tr>
                         <tr>
-                            <td>Цена</td>
+                          <td>Цена</td>
                           <td>700 Р.</td>
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 500 г в корзину">Заказать</button>
                   </div>
+                <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 500 г в корзину">Заказать</button>
                 </div>
               </li>
               <li class="listing__list__item">
@@ -100,8 +103,8 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 1000 г в корзину">Заказать</button>
                   </div>
+                <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 1000 г в корзину">Заказать</button>
                 </div>
               </li>
               <li class="listing__list__item">
@@ -131,8 +134,8 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 500 г в корзину">Заказать</button>
                   </div>
+                <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 500 г в корзину">Заказать</button>
                 </div>
               </li>
               <li class="listing__list__item">
@@ -162,8 +165,8 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 1000 г в корзину">Заказать</button>
                   </div>
+                <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy PRO 1000 г в корзину">Заказать</button>
                 </div>
               </li>
               <li class="listing__list__item">
@@ -193,8 +196,8 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy Slim 500 г в корзину">Заказать</button>
                   </div>
+                <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy Slim 500 г в корзину">Заказать</button>
                 </div>
               </li>
               <li class="listing__list__item">
@@ -224,8 +227,8 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy Slim 1000 г в корзину">Заказать</button>
                   </div>
+                <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy Slim 1000 г в корзину">Заказать</button>
                 </div>
               </li>
               <li class="listing__list__item">
@@ -255,140 +258,147 @@
                         </tr>
                       </tbody>
                     </table>
-                    <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy Slim 500 г в корзину">Заказать</button>
                   </div>
+                <button type="submit" class="button goods-button" aria-label="Добавить Cat Energy Slim 500 г в корзину">Заказать</button>
+                </div>
+              </li>
+              <li class="listing__list__item">
+                <div class="listing__list__item--description">
+                  <div class="goods-photo">
+                    <img src="img/plus.png" alt="Ещё товары">
+                  </div>
+                  <div class="goods-name">
+                    <h3>
+                      Показать еще 100500 товаров
+                    </h3>
+                  </div>
+                  <div class="goods-description">
+                    <p>На самом деле вкусов гораздо больше!</p>
+                  </div>
+                <button type="submit" class="button more-goods-button" aria-label="Показать больше товаров">Показать все</button>
                 </div>
               </li>
             </ul>
-            <img src="img/plus.png" alt="Ещё товары">
-            <p class="more-goods">Показать еще 100500 товаров</p>
-            <p class="more-goods-description">На самом деле вкусов гораздо больше!</p>
-            <button type="submit" class="button more-goods-button" aria-label="Показать больше товаров">Показать все</button>
           </div>
+          <h2 class="extension__title">
+            Дополнительные товары
+          </h2>
           <div class="extension">
-            <ul class="extension__list">
-              <li class="extension__list__item">
-                <div class="extension__list__item--description">
-                  <div class="extension-name">
-                    <h3>
-                      Сахарозаменитель
-                    </h3>
+            <div class="extension__offers">
+              <ul class="extension__list">
+                <li class="extension__list__item">
+                    <div class="extension__list__item--description">
+                      <div class="extension-header">
+                        <div class="extension-name">
+                          <h3>
+                            Сахарозаменитель
+                          </h3>
+                        </div>
+                        <div class="extension-description">
+                          <div class="weight">1 упаковка (100 г)</div>
+                          <div class="price">200 Р.</div>
+                        </div>
+                      </div>
+                    <button type="submit" class="button additional-products-button" aria-label="Добавить Сахарозаменитель в корзину">Заказать</button>
                   </div>
-                  <div class="extension-description">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>1 упаковка (100 г)</td>
-                          <td>200 Р.</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                </li>
+                <li class="extension__list__item">
+                  <div class="extension__list__item--description">
+                    <div class="extension-header">
+                      <div class="extension-name">
+                        <h3>
+                          Питьевая вода
+                        </h3>
+                      </div>
+                      <div class="extension-description">
+                        <div class="weight">5 литров</div>
+                        <div class="price">50 Р.</div>
+                      </div>
+                    </div>
+                    <button type="submit" class="button additional-products-button" aria-label="Добавить питьевая вода в корзину">Заказать</button>
                   </div>
-                  <button type="submit" class="button goods-button" aria-label="Добавить Сахарозаменитель в корзину">Заказать</button>
-                </div>
-              </li>
-              <li class="extension__list__item">
-                <div class="extension__list__item--description">
-                  <div class="extension-name">
-                    <h3>
-                      Питьевая вода
-                    </h3>
+                </li>
+                <li class="extension__list__item">
+                  <div class="extension__list__item--description">
+                    <div class="extension-header">
+                      <div class="extension-name">
+                        <h3>
+                          Молоко
+                        </h3>
+                      </div>
+                      <div class="extension-description">
+                        <div class="weight">1 литр</div>
+                        <div class="price">100 Р.</div>
+                      </div>
+                    </div>
+                    <button type="submit" class="button additional-products-button" aria-label="Добавить молоко в корзину">Заказать</button>
                   </div>
-                  <div class="extension-description">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>5 литров</td>
-                          <td>50 Р.</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                </li>
+                <li class="extension__list__item">
+                  <div class="extension__list__item--description">
+                    <div class="extension-header">
+                      <div class="extension-name">
+                        <h3>
+                          Витамины
+                        </h3>
+                      </div>
+                      <div class="extension-description">
+                        <div class="weight">1 упаковка (30 г)</div>
+                        <div class="price">300 Р.</div>
+                      </div>
+                    </div>
+                    <button type="submit" class="button additional-products-button" aria-label="Добавить витамины в корзину">Заказать</button>
                   </div>
-                  <button type="submit" class="button goods-button" aria-label="Добавить питьевая вода в корзину">Заказать</button>
-                </div>
-              </li>
-              <li class="extension__list__item">
-                <div class="extension__list__item--description">
-                  <div class="extension-name">
-                    <h3>
-                      Молоко
-                    </h3>
-                  </div>
-                  <div class="extension-description">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>1 литр</td>
-                          <td>100 Р.</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <button type="submit" class="button goods-button" aria-label="Добавить молоко в корзину">Заказать</button>
-                </div>
-              </li>
-              <li class="extension__list__item">
-                <div class="extension__list__item--description">
-                  <div class="extension-name">
-                    <h3>
-                      Витамины
-                    </h3>
-                  </div>
-                  <div class="extension-description">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>1 упаковка (30 г)</td>
-                          <td>300 Р.</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <button type="submit" class="button goods-button" aria-label="Добавить витамины в корзину">Заказать</button>
-                </div>
-              </li>
-            </ul>
-            <img src="img/order-everything.png" alt="Подарок за заказ">
+                </li>
+              </ul>
+            </div>
+            <div class="gift">
+              2
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__collaboration">
-          <p>
-            Приглошаем<br>
-            к сотрудничеству<br>
-            дилеров!
-          </p>
-        </div>
-        <div class="page-footer__contacts">
-          <p>ул. Большая <br>
-          Конюшенная, д. 19/8<br>
-          Санкт-Петербург
-          </p>
+        <div class="page-footer__information">
+          <div class="page-footer__information--collaboration">
+            <p>
+              Приглошаем<br>
+              к сотрудничеству<br>
+              дилеров!
+            </p>
+          </div>
+          <div class="page-footer__information--contacts">
+            <p>ул. Большая <br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург
+            </p>
+          </div>
         </div>
         <div class="page-footer__map">
         </div>
-        <div class="page-footer__logo">
-          <img src="img/footer-logo.png" alt="logo">
-        </div>
-        <div class="page-footer__social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <p>HTML Academy</p>
-          <img src="img/html-logo.png" alt="logo HTML Academy">
+        <div class="page-footer__links">
+          <div class="page-footer__logo">
+            <img src="img/footer-logo.png" alt="logo">
+          </div>
+          <div class="page-footer__social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <p>HTML Academy</p>
+            <img src="img/html-logo.png" alt="logo HTML Academy">
+          </div>
         </div>
       </div>
     </footer>
