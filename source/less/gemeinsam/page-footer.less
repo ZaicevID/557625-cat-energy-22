@@ -1,0 +1,177 @@
+.page-footer {
+  background-color: @white;
+  &--bg-color {
+    background-color: @basic-gray;
+  }
+}
+
+.page-footer__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 61px;
+    height: 150px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 61px;
+    height: 150px;
+  }
+}
+
+.page-footer__color-wrapper {
+  background-color: @basic-gray;
+}
+
+.page-footer__logo {
+  display: block;
+  padding-top: 39px;
+  padding-left: 76px;
+  padding-right: 76px;
+  padding-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.page-footer__logo img {
+  width: 128px;
+  height: 24px;
+}
+
+.page-footer__list {
+  height: 64px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  border-top: 1px solid @dark-gray;
+  border-bottom: 1px solid @dark-gray;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: 0;
+  }
+}
+
+
+
+
+
+/*
+.page-footer__links {
+  background: #F2F2F2;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 201px;
+    grid-row: 1;
+    grid-column: 1;
+    order: 1;
+  }
+}
+
+.page-footer__information--collaboration p {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.page-footer__information--contacts p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-footer__copyright p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  max-width: 320px;
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+  }
+  @media (min-width: @desktop-width) {
+    grid-template-rows: 1fr min-content;
+    max-width: 1140px;
+  }
+}
+
+.page-footer__map {
+  max-width: 320px;
+  height: 362px;
+  background-image: url(../img/map.png);
+  @media (min-width: @tablet-width) {
+    max-width: 768px;
+    height: 400px;
+    background-image: url(../img/map-table.png);
+  }
+  @media (min-width: @desktop-width) {
+    max-width: 1140px;
+    height: 400px;
+    background-image: url(../img/map-desk.png);
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 35px
+}
+*/
