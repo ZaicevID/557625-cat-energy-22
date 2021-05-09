@@ -1,3 +1,114 @@
+.main-form {
+  overflow: hidden;
+}
+
+.main-form__wrapper {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
+.main-form__weight-change {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  padding-left: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: @dark-gray;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: @dark-gray;
+  }
+  @media (min-width: @tablet-width) {
+    margin-top: 72px;
+    margin-left: 0;
+    width: 630px;
+    padding-top: 2px;
+    padding-bottom: 25px;
+    border: 1px solid @dark-gray;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 7px;
+    padding-bottom: 25px;
+    margin-top: 165px;
+    margin-left: 80px;
+    width: 568px;
+  }
+}
+
+.main-form__contacts {
+  padding-top: 26px;
+  @media (min-width: @tablet-width) {
+      padding-top: 71px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 69px;
+  }
+}
+
+.main-form__comment {
+  padding-top: 23px;
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 69px;
+  }
+}
+
+.main-form__additionally-info {
+  padding-top: 18px;
+  padding-bottom: 32px;
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 82px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 67px;
+    padding-bottom: 82px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-form__info-cat-wrapper {
+    display: flex;
+  }
+}
+
+
+
+
 /*
 .application__title {
   font-family: Oswald;
@@ -6,7 +117,6 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-} */
 
 .application__description {
   font-family: Oswald;
@@ -132,3 +242,4 @@
     gap: 61px;
   }
 }
+} */
