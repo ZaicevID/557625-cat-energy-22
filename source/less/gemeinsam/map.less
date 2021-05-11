@@ -1,0 +1,110 @@
+.map {
+  background-color: @white;
+  position: relative;
+
+  &--bg-color {
+    background-color: @basic-gray;
+  }
+}
+
+.map__inner,
+.map__picture-position {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
+.map__picture img {
+  width: 320px;
+  margin-left: -20px;
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    margin-left: -30px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    margin-left: -110px;
+  }
+}
+
+.map__interactive {
+  width: 100%;
+  border: none;
+}
+
+@media (min-width: @desktop-width) {
+  .map__inner-position {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    top: 95px;
+  }
+}
+
+.map-plate {
+  background-color: @white;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0;
+
+  &--bg-color {
+    background-color: @basic-gray;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 62px 42px 51px 41px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 66px 76px 51px 76px;
+
+    &--bg-color {
+      background-color: @white;
+    }
+  }
+}
+
+.map-plate__slogan {
+  display: block;
+  width: 140px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special-black;
+  text-transform: uppercase;
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 170px;
+  }
+}
+
+.map-plate__address {
+  display: block;
+  width: 140px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: @special-dark-gray;
+  @media (min-width: @desktop-width) {
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+  }
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
